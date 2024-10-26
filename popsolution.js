@@ -1,5 +1,5 @@
 //change 5 to the total number of questions
-var total=5
+var total=10
 var question=new Array()
 for (i=1;i<=total+1;i++){
 temp="choice"+i+"=new Array()"
@@ -51,9 +51,43 @@ choice5[2]="England"
 choice5[3]="Australia"
 choice5[4]="Scotland"
 
+question[6]="What do Goldendoodles love?"
+choice6[1]="Exercise"
+choice6[2]="Playing"
+choice6[3]="Toys"
+choice6[4]="All of the above"
+
+question[7]="What should you never feed your Goldendoodle?"
+choice7[1]="Avocado"
+choice7[2]="Chocolate"
+choice7[3]="Garlic"
+choice7[4]="All of the above"
+
+question[8]="What characteristics make a Goldendoodle's temperament?"
+choice8[1]="Intelligent"
+choice8[2]="High Energy"
+choice8[3]="Friendly"
+choice8[4]="All of the above"
+
+question[9]="In which US states are Goldendoodles the most popular?"
+choice9[1]="Utah and Idaho"
+choice9[2]="Florida and Georgia"
+choice9[3]="New York and Pennsylvania"
+choice9[4]="California and Oregon"
+
+question[10]="What hair types can a Goldendoodle have?"
+choice10[1]="Straight"
+choice10[2]="Wavy"
+choice10[3]="Curled"
+choice10[4]="All of the above"
+
 solution[1]="d"
 solution[2]="b"
 solution[3]="b"
 solution[4]="c"
 solution[5]="c"
-
+solution[6]="d"
+solution[7]="d"
+solution[8]="d"
+solution[9]="a"
+solution[10]="d"
