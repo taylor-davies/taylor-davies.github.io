@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+Name       : Vestibule 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130406
+-->
+
+<!-- Comments are in ALL CAPS -->
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<!-- SET THE PAGE TITLE INSIDE THE TITLE TAGS BELOW -->
+<title>Taylor Davies Portfolio</title>
+
+<link href="http://fonts.googleapis.com/css?family=Oxygen:400,700,300" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+
+<div id="wrapper">
+<!-- START OF THE NAVIGATION SECTION.  DO NOT CHANGE ANYTHING ABOVE THIS LINE EXCEPT TO SET THE TITLE. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&family=Nanum+Myeongjo&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+	<div id="menu-wrapper">
+		<div id="menu" class="container">
+			<ul>
+				<!-- NAVIGATION MENU.  THERE SHOULD BE ONE LIST ITEM FOR EACH BUTTON IN YOUR NAVIGATION BAR. -->
+                <!-- REPLACE THE # IN THE LINK WITH THE FILE NAME OF THE APPROPRIATE PAGE.  -->
+                <li class="current_page_item"><a href="index.html">Home</a></li>
+				<li><a href="image.html">Image Editing</a></li>
+				<li><a href="web.html">Web Design</a></li>
+				<li><a href="video.html">Video Production</a></li>
+				<li><a href="animation.html">Animation</a></li>
+				<li><a href="screencast.html">Screencasting</a></li>
+			</ul>
+		</div>
+	</div>
+    
+    <div style="padding: 0px">
+    </div>
+    
+	<div id="logo" class="container">
+		<!-- THIS IS WHERE YOU CUSTOMIZE THE HEADER FOR EACH PAGE. -->
+        <br>
+        <h1>Web Design</h1>
+		<!-- THIS IS WHERE YOU CUSTOMIZE THE SUBHEADER FOR EACH PAGE. -->
+	</div>
+
+	<div id="page" class="container">
+		<div>
+			<div class="entry">
+				<!-- THIS IS WHERE YOU CUSTOMIZE THE INTRODUCTORY PARAGRAPH FOR EACH PAGE. -->
+			</div>
+		</div>
+	</div>
+    
+    
+<!-- END OF THE NAVIGATION SECTION. -->
+
+<!-- START OF THE CONTENT SECTION. -->
+
+<!-- ON OTHER PAGES, LIKE THE PROJECT PAGES, YOU WILL TAKE OUT EVERYTHING BETWEEN HERE AND THE END OF THE CONTENT SECTION AND REPLACE IT WITH THE PROJECT CONTENT. -->
+  
+ 	<div id="one-column" class="container">
+		<div class="tbox1">
+			<div class="box-style">
+				    <img src="assets/doodlequiz.png" alt="Image Editing" height="400" style="display: block; margin: auto; padding-top: 15px;">
+				    <br>	
+                    <h2>Goldendoodle Quiz</h2>
+                    <br><br>
+                    <h3>How I Addressed the Project</h3>
+                    <p id="textsmall">I utilized my skills in HTML and Javascript to create a quiz on Goldendoodles. The subject matter is close to heart, as I have two Goldendoodle puppies, Rip and Ralphie.</p>
+                    <br><br>
+                    <h3>What I Created</h3>
+                    <p id="textsmall">This project is composed of HTML, Javascript and CSS. I created this project by significantly modifying a template my professor provided. <br><br>
+                    Background color and image: I decided on a background color (#d8bf9f), but I wanted to take the background design a step further. I created a background image in Canva, then exported it as a SVG. I placed the .SVG in the web files folder and linked to it in the head of the page. I gave the image certain attributes so that it would appear as I intended, such as not repeating the image, ensuring the image is fixed in the center of the page and covers the screen. Since the image is an SVG, this file type can withstand those attributes due to its ability to resize at any viewpoint. Detailed code changes included below:<br>
+
+                      background-image: url('goldendoodlebackground.svg');<br>
+                      background-repeat: no-repeat;<br>
+                      background-attachment: fixed;<br>
+                      background-size: cover;<br>
+                      background-position: center;<br><br>
+
+                    The background image includes pictures of my two Goldendoodles, Rip and Ralphie, both 1.5 years old. They are such sweet boys and love to pose for pictures (treats).<br><br>
+
+                    Quiz background: I gave the quiz a white background with rounded edges to create a crisp contrast with the background image. I also wanted to ensure the quiz did not overlap the areas of the background image with the dogs, so I set the width to 50% and ensured the content was center aligned.Further, I ensured the div was center aligned.<br><br>
+                        
+                    Text: In head, I linked to a few Google Fonts I utilized in this quiz: Nunito for headings and DM Sans for body text. I updated the heading text to dark brown to fit the golden theme and create an accessible text contrast ratio from the background image. I ensured all text met WCAG 2.1 AA standards for accessibility using Adobe Color's accessibility tools. I also added padding throughout the page. For instance, the h1 element has padding-top:30px. 
+
+                    Further, I added a line break in the text directly under the heading by adding a line break.
+
+                    Buttons: I updated the color, shape and font of the previous and next buttons.<br><br>
+
+                    Quiz Functionality (Javascript):
+                    I updated the existing code with five of my quiz questions, then added an additional five questions. To add the additional five questions, I had to first update var total=10, then add five additional questions with their corresponding answer choices and solutions. Then, I added my seven answer feedback options.
+                    </p>
+                    <br><br>
+                    <br><br>
+                    <h3>What I Learned</h3>
+                    <p id="textsmall">This was my first project coding by hand rather than working with a web builder such as WebFlow or Wix. Therefore, there was a learning curve. However, I was able to connect to and build upon my previous knowledge of basic HTML, CSS and Javascript. This was a rewarding project, as I now feel much more confident in my coding abilities in these languages.</p>
+					<a href="doodle/goldendoodle.html" class="button">Explore</a>
+                    <br>
+				</div>
+			</div>
+		</div>
+
+     	<div id="one-column" class="container">
+		<div class="tbox1">
+			<div class="box-style">
+				    <img src="assets/gotquiz.png" alt="Image Editing" height="400" style="display: block; margin: auto; padding-top: 15px;">
+				    <br>	
+                    <h2>Game of Thrones Drag-and-Drop Quiz</h2>
+                    <br><br>
+                    <h3>How I Addressed the Project</h3>
+                    <p id="textsmall">I utilized my skills in HTML and CSS to create a drag-and-drop quiz based on Game of Thrones. Learners can select a character from the list, then drag and drop the character to their respective family house.</p>
+                    <br><br>
+                    <h3>What I Created</h3>    
+                    <p id="textsmall">This project is composed of HTML and CSS. I created this project by significantly modifying a template my professor provided. <br><br>
+                    Below is a description of the revisions I made to both the HTML and CSS files.<br><br>
+
+                    HTML <br>
+                    I added a Google font embed for utilized fonts (I embedded a few but only used Nanum Myeongjo). 
+                    I adjusted the title and instructions. <br>
+                    I revised the existing boxes by adding each house's name. Then, I adjusted the existing drag and drop tiles by adding the corresponding character names. <br>
+                    I added boxes 4 and 5, along with their corresponding character names. <br>
+                    I adjusted the correct pop-up message to read “Congratulations! Everything is correct. But remember, the night is dark and full of terrors.” <br><br>
+                    CSS <br>
+                    I adjusted the font in {body} to Nanum Myeongjo (Google Fonts, embed in html).<br>
+                    I downloaded an open source image of Scotland (simliar landscape to some areas in Westeros) and added it to the web files folder. Then, I added it as a background image in {body} and added properties to it. Below is a code snippet:  <br>       
+                    background-image: url("scotland.jpg");<br>
+                    background-position: center;<br>
+                    background-repeat: no-repeat;<br>
+                    background-size: cover;<br>
+                    position: relative;<br><br>
+
+                    Box borders: I changed the border color to black (#000000) and rounded only the bottom two corners of the elements by 15px. I was able to round only two corners through the following:  <br>      
+                    border-radius: 0px 0px 15px 15px;<br><br>
+
+                    I adjusted the “house” box headings to a deep red (#412926). <br>
+                    I adjusted the “character” box heading to a deep charcoal color (#212026). <br>
+                    I set the main container as white with a 90% transparency. I achieved this through the following:<br>
+                    background-color: rgba(255, 255, 255, 0.9)<br>
+
+                    I set the correct color to: #115930. I ensured that this color met WCAG 2.1 AA standards for text-contrast ratio.<br>
+                    I set the incorrect color to: #D13D4B. I ensured that this color met WCAG 2.1 AA standards for text-contrast ratio.<br>
+                    I set the background color of the movable items to: #C1B990. <br>
+                    I adjusted the height of the main container and left (sources/character) column to fit the content better.<br>
+                        <br></p>
+                    <h3>What I Learned</h3>
+                    <p id="textsmall">I created this project after the Goldendoodle quiz, so I was able to build upon my skills in HTML and CSS. In this project, I was able to use more advanced styling, such as element transparency and corner rounding. A challenge I experienced during development was the CSS being a standalone file. This meant that I had to be careful in identifying elements that needed revision, as I would accidentally edit the wrong element. By learning this hands-on and making mistakes, I developed a better understanding of how HTML and CSS files interact. Further, I learned how to be precise and calculated when coding by hand.</p>
+					<a href="got/drag.html" class="button">Explore</a>
+                    <br>
+				</div>
+			</div>
+		</div>
+    
+    
+<!-- END OF THE CONTENT SECTION.  BELOW YOU CAN CUSTOMIZE YOUR FOOTER. -->
+</div>
+
+<div id="footer">
+	<!-- START FOOTER -->
+	<p>© 2024 Taylor Davies | Template by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. | Created as part of the <a href="http://education.ufl.edu/educational-technology/">University of Florida Educational Technology Program</a>.</p>
+    <!-- END FOOTER -->
+</div>
+
+</body>
+</html>
